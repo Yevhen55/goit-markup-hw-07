@@ -19,26 +19,25 @@
         <div class="container nav">
         <a href="index.html" class="logo"><span class="acent-logo">Web</span>Studio</a>
         <nav class="nav-page">
-            <ul class="site-nav nav">
-                <li class="item"><a class="link current" href="index.html">Студия</a></li>
-                <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
-                <li class="item"><a class="link" href="#">Контакты</a></li>
+            <ul class="site-nav">
+                <li class="nav-page__item"><a class="nav-page__link nav-page__link--current" href="index.html">Студия</a></li>
+                <li class="nav-page__item"><a class="nav-page__link " href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-page__item"><a class="nav-page__link" href="#">Контакты</a></li>
             </ul>
         </nav>
        
         <ul class="auth-nav">
-           
-
-            <li class="item"><a class="link" href="mailto:info@devstudio.com">
-                <svg class="icon-nav" width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+           <li class="auth-nav__item"><a class="auth-nav__link" href="mailto:info@devstudio.com">
+                <svg class="auth-nav__icon" width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
                 <path 
                     d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
                      />
             </svg>info@devstudio.com</a>
               </li>
 
-            <li class="item"><a class="link" href="tel:380961111111">
-                <svg class="icon-nav" width="10" height="16" viewBox="0 0 10 16"  xmlns="http://www.w3.org/2000/svg">
+            <li class="auth-nav__item"><a class="auth-nav__link" href="tel:380961111111">
+                <svg class="auth-nav__icon" width="10" height="16" viewBox="0 0 10 16"  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
                     />
@@ -425,26 +424,26 @@
                     <use   href="./images/symbol-defs.svg#icon-mail"></use>
                 </svg>
             </div>
-            <div class="form-field">
-                <label for="comment">Коментарий</label>
-                <textarea class="commet" name="comment"  
-                 id="coment"  
-                 rows="10" 
-                 placeholder="Введите текст"
-                 >
-                </textarea>
+            <div class="form-field bottom">
+                <label for="comment" class="form-label">Коментарий</label>
+                <textarea class="commet" name="comment" placeholder="Введите текст" id="coment" rows="10">
+                            </textarea>
             </div>
-            <div>
-                <input type="checkbox" name="" id="">
-                <label>Соглашаюсь с рассылкой и принимаю Условия договора</label>
-            </div>
-            <button type="submit">Отправить</button>
+            <label class="radio">
+                <input class="visually-hidden chechbox" type="checkbox" required="">
+                <svg class="modal-check" width="11" height="8">
+                    <use></use>
+                </svg>
+                <span class="label-checkbox">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href class="modal-link">Условия договора</a>
+                </span>
+            </label>
+            <button class="button-modal" type="submit">Отправить</button>
             </form>
             <button class="modal-close" data-modal-close><svg class="icon-close" width="11" height="11">
-                <use href="./images/symbol-defs.svg#icon-close"></use>
-            </svg></button>
-            
-        </div>
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg></button>
     </div>
     <script src="./js/modal.js"></script>
 </body>
