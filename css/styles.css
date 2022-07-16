@@ -13,6 +13,8 @@
     --mail-tel: rgba(255, 255, 255, 0.6);
     --backgroundcolor-team: #F5F4FA ;
 }
+
+/* утилиты */
   /* button {  
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -21,15 +23,44 @@
 
 
 ul {margin: 0; padding: 0;
-    list-style: none;
+    list-style: none; padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
 }
-
+.nav {
+    display: flex;
+    align-items: center;
+}
+.text-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+}
 /* разметка хедера  */
 /*логотип  */
 
 
 .header-list {border-bottom: 1px  solid #ECECEC;}
-.container {margin: 0 auto; padding-left: 15px;padding-right: 15px; width: 1200px;}
+
  .nav .logo { margin-top: 25px; margin-bottom: 25px;
     margin-right: 93px;
 }
@@ -58,10 +89,7 @@ ul {margin: 0; padding: 0;
 .body-list {
     color: var(--primary-text-color);
 }
-.nav {
-    display: flex;
-    align-items: center;
-}
+
 /* навигация */
 .site-nav {
     display: flex;
@@ -181,55 +209,45 @@ ul {margin: 0; padding: 0;
 }
 
 
-
-.text-visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-
-
-.hero .btn {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.text-hero {
+.hero__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-footer-textbtn);
     margin-top: 0;
-    margin-bottom: 30px;
+        margin-bottom: 30px;
 }
 
-.section-btn .btn {
-    cursor: pointer;
-}
+.hero__btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-footer-textbtn);
+    background-color: var(--focus-hover-active-color);
+    margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        border-radius: 4px;
+        border: 0;
+        padding-top: 10px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 10px;
+    }
 
-.hero .btn {
-    border-radius: 4px;
-    border: 0;
-    padding-top: 10px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-}
 
-/* .text-hero {
-    background-color: var(--fon-footer-h1); 
-}  */
+
 
 /* Модальное окно  */
 
@@ -494,60 +512,17 @@ ul {margin: 0; padding: 0;
 
 /* Модальное окно  */
 
-.paint {
-    padding-top: 0;
-}
 
-.text-hero {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-footer-textbtn)
-}
-
-.hero .btn {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--text-footer-textbtn);
-    background-color: var(--focus-hover-active-color);
-}
-
-.section .hero {
-    padding-top: 200px;
-
-}
 /* Модальное окно  */
 
 
 
 /* benefits */
-/* .list .benefits {
-    padding-right: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-} */
 
 .container .list-benefits {
     display: flex;
 }
 
-ul {
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
 .icon-benefits {
     background-color: #F5F4FA;
     border-radius: 4px;
