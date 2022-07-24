@@ -166,10 +166,6 @@ ul {margin: 0; padding: 0;
                 font-size: 14px;
                 line-height: 1.14;
                 letter-spacing: 0.02em;
-    letter-spacing: 0.02em; 
-                letter-spacing: 0.02em;
-    letter-spacing: 0.02em; 
-                letter-spacing: 0.02em;
                 text-decoration: none;
                 transition-property: color;
                 transition-duration: 250ms;
@@ -533,6 +529,7 @@ ul {margin: 0; padding: 0;
 .container .list-benefits {
     display: flex;
 }
+
 
 .icon-benefits {
     background-color: #F5F4FA;
@@ -984,7 +981,7 @@ text-transform: uppercase;
     padding-right: 28px;
     padding-top: 10px;
     padding-bottom: 10px;
-    transition: background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    transition: background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1)}
 
 .icon-send {
     margin-left: 10px;
