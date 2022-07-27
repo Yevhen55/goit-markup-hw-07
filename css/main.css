@@ -828,10 +828,6 @@ ul {
   color: var(--focus-hover-active-color);
 }
 
-/* .link :last-child {
-    color: var(--mail-tel);
-    text-decoration: none;
-} */
 .footer-list {
   font-style: initial;
   margin-bottom: 0;
