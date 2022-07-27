@@ -31,6 +31,7 @@
     color: var(--text-footer-textbtn);
 }
 
+
 .contact {transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -42,10 +43,7 @@
     color: var(--second-text-color)
 }
 
-/* .link :last-child {
-    color: var(--mail-tel);
-    text-decoration: none;
-} */
+
 .footer-list {
     font-style: initial;
     margin-bottom: 0;
